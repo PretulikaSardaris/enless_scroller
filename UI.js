@@ -9,7 +9,9 @@ export class UI{
          context.font = this.fontSize + 'px' + this.fontFamily;
          context.textAlign = 'left' ;
          context.fillStyle = this.game.fontColor;
-
+         context.fillText('Press any Arrow Key to play and Enter to Roll' , 20 , 70 )
+         
          context.fillText('Score: ' + this.game.score ,20,50)
+         
     }
 }
