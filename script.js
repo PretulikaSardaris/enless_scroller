@@ -35,7 +35,7 @@ window.addEventListener('load', function () {
             this.enemies = [];
             this.enemyTimer = 0;
             this.enemyInterval = 1000;
-            this.debug = true ;
+            this.debug = false ;
             this.score = 0;
             this.fontColor = 'black'
         }
