@@ -73,9 +73,7 @@ if (this.frameTimer > this.frameInterval){
             
             } else {
                 enemy.markedForDeletion = false; 
-                 this.game.score--
-                
-
+                 
             }
         })
     }
