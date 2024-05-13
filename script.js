@@ -45,8 +45,10 @@ window.addEventListener('load', function () {
                 this.enemyTimer += deltaTime;
             }
             this.enemies.forEach(enemy => {
-                enemy.update(deltaTime)
+                enemy.update(deltaTime);
+                if(enemy.markedForDeletion) this.enemies.splice(this.enemies.indexOf(enemy) , 1)
             })
+
         }
         draw(context) {
             this.background.draw(context);
